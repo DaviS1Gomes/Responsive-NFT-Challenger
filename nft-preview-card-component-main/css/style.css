@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body {
+    background-color: var(--very-dark-blue-main-BG);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.cart {
+    background-color: var(--very-dark-blue-card-BG);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    padding: 15px 10px;
+    border-radius: 15px;
+    transition: .2s ease-in;
+    box-shadow: 0px 20px 80px var(--very-dark-blue-card-BG);
+}
+
+.cart .MainImage {
+    width: 90%;
+    margin: 12.5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Main-Images .ViewImage {
+    position: absolute;
+    width: 15%;
+    left: 42.5%;
+    top: 25%;
+}
+
+.colorOverlay {
+    opacity: 0.25;
+    width: 315px;
+    height: 315px;
+    background-color: aqua;
+    position: absolute;
+    top: 4%;
+    left: 30px;
+    border-radius: 10px;
+}
+
+.Main-Images {
+    opacity: 0;
+}
+
+.Main-Images:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cart .description-cart h1 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.cart .description-cart h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.description-cart {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.first-paragraph {
+    color: var(--soft-blue);
+    font-weight: 400;
+    width: 100%;
+    font-size: 19px;
+    margin: 10px 0px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.line-Cart {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid var(--very-dark-blue-line) 1px;
+    padding-bottom: 30px;
+}
+
+.line-Cart h2 {
+    display: inherit;
+    align-items: center;
+}
+
+.line-Cart img {
+    margin-right: 7.5px;
+}
+
+.title.-first {
+    color: var(--cyan);
+    font-weight: 600;
+    text-shadow: 1px 1px 10px black;
+}
+
+.title.-second {
+    color: var(--soft-blue);
+    font-weight: 600;
+    text-shadow: 1px 1px 10px black;
+}
+
+.profile-Cart {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-top: 20px;
+}
+
+.profile-Cart img {
+    width: 12.5%;
+    border: 2px solid var(--white-color);
+    border-radius: 80%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-Cart p {
+    color: var(--soft-blue);
+    margin-bottom: 10px;
+}
+
+.profile-Cart p strong {
+    color: var(--white-color);
+}
+
+.profile-Cart p strong:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+@media only screen and (max-width: 400px) {
+    .cart {
+        width: 250px;
+    }
+}
