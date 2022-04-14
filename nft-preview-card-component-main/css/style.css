@@ -41,8 +41,8 @@ body {
     height: 315px;
     background-color: aqua;
     position: absolute;
-    top: 4%;
-    left: 30px;
+    top: 4.25%;
+    left: 28px;
     border-radius: 10px;
 }
 
@@ -144,5 +144,21 @@ body {
 @media only screen and (max-width: 400px) {
     .cart {
         width: 250px;
+    }
+    .Main-Images .ViewImage {
+        position: absolute;
+        width: 15%;
+        left: 42.5%;
+        top: 22%;
+    }
+    .colorOverlay {
+        opacity: 0.25;
+        width: 225px;
+        height: 225px;
+        background-color: aqua;
+        position: absolute;
+        top: 5%;
+        left: 23px;
+        border-radius: 10px;
     }
 }
