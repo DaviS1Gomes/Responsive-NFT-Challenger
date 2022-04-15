@@ -49,11 +49,14 @@ body {
 
 .Main-Images {
     opacity: 0;
+    transition: 0.3s;
+
 }
 
 .Main-Images:hover {
     opacity: 1;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .cart .description-cart h1 {
